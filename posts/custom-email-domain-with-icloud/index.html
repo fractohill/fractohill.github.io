@@ -58,6 +58,14 @@
     <!-- async scripts -->
     <!-- Google Analytics -->
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBWN33TQ87"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DBWN33TQ87');
+  </script>
+
 
     <!-- Umami Analytics -->
 
@@ -93,6 +101,8 @@
        --><li><a href="/archives/">Writing</a></li><!--
      --><!--
        --><li><a href="/null">Projects</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
      -->
       </ul>
     </span>
@@ -220,6 +230,12 @@
   </div>
 </article>
 
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
 
 
         
@@ -236,6 +252,8 @@
           <li><a href="/archives/">Writing</a></li>
         
           <li><a href="/null">Projects</a></li>
+        
+          <li><a href="/search/">Search</a></li>
         
       </ul>
     </div>
@@ -296,6 +314,8 @@
        --><li><a href="/archives/">Writing</a></li><!--
      --><!--
        --><li><a href="/null">Projects</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
      -->
       </ul>
     </nav>
@@ -349,9 +369,31 @@
 
 <!-- Baidu Analytics -->
 
+  <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f07eec992f2a01bb7b4204a9f32956b3";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+
 <!-- Cloudflare Analytics -->
 
 <!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'fractohill';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
 
 <!-- utterances Comments -->
 
