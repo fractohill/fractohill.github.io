@@ -451,7 +451,7 @@ body td {
 /* Scroll bar */
 /* For Firefox */
 * {
-  scrollbar-color: #ffe2c2 transparent;
+  scrollbar-color: #ffe6cc transparent;
 }
 /* For Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
@@ -462,14 +462,14 @@ body td {
   background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: #ffe2c2;
+  background-color: #ffe6cc;
   border-radius: 6px;
 }
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #ffb768;
+  background-color: #ffb970;
 }
 *::-webkit-scrollbar-thumb:active {
-  background-color: #ffa23b;
+  background-color: #ffa342;
 }
 html {
   margin: 0;
