@@ -9,12 +9,12 @@
     <meta name="description" content="1. Hexo相關 Hexo&#x2F;目前使用仙人掌主題casus🌵+自配色orange-soda🍊  1.1 使用markdown嵌入本地圖片為了方便圖片管理，新建一篇文章時，同時新建與文章同名文件夾的方式，存放該文相關圖片。  打開_config.yml文件，找到post_asset_folder: false ，將false 設為true 打開Terminal，輸入npm instal">
 <meta property="og:type" content="article">
 <meta property="og:title" content="持續更新：Blog相關問題及功能完善">
-<meta property="og:url" content="http://example.com/posts/tips/">
+<meta property="og:url" content="https://fractohill.com/posts/tips/">
 <meta property="og:site_name" content="Fractohill｜碎山小站">
 <meta property="og:description" content="1. Hexo相關 Hexo&#x2F;目前使用仙人掌主題casus🌵+自配色orange-soda🍊  1.1 使用markdown嵌入本地圖片為了方便圖片管理，新建一篇文章時，同時新建與文章同名文件夾的方式，存放該文相關圖片。  打開_config.yml文件，找到post_asset_folder: false ，將false 設為true 打開Terminal，輸入npm instal">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-12-04T06:06:49.000Z">
-<meta property="article:modified_time" content="2024-12-06T13:18:01.445Z">
+<meta property="article:modified_time" content="2024-12-07T03:37:16.422Z">
 <meta property="article:author" content="碎山">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Blogger">
@@ -65,7 +65,10 @@
     
 	<!-- mathjax -->
 	
-  <link rel="stylesheet" type="text/css" href="https://fonts.font.im/css?family=Noto+Sans+SC:normal,bold">
+  <link rel="stylesheet" type="text/css" href="https://fonts.font.im/css?family=Noto+Sans+SC:normal,bold,italic">
+  <link rel="stylesheet" type="text/css" href="https://fonts.font.im/css?family=Fira+Code:normal,bold">
+
+
 <meta name="generator" content="Hexo 7.3.0"></head>
 
 <body class="max-width mx-auto px3 ltr">
@@ -108,10 +111,10 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/posts/tips/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/posts/tips/&text=持續更新：Blog相關問題及功能完善"><i class="fab fa-twitter " aria-hidden="true"></i></a></li> 
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/posts/tips/&title=持續更新：Blog相關問題及功能完善"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=持續更新：Blog相關問題及功能完善&body=Check out this article: http://example.com/posts/tips/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://fractohill.com/posts/tips/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://fractohill.com/posts/tips/&text=持續更新：Blog相關問題及功能完善"><i class="fab fa-twitter " aria-hidden="true"></i></a></li> 
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://fractohill.com/posts/tips/&title=持續更新：Blog相關問題及功能完善"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=持續更新：Blog相關問題及功能完善&body=Check out this article: https://fractohill.com/posts/tips/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -145,10 +148,15 @@
       
         <time datetime="2024-12-04T06:06:49.000Z" class="dt-published" itemprop="datePublished">2024-12-04</time>
         
+        (Updated: <time datetime="2024-12-07T03:37:16.422Z" class="dt-updated" itemprop="dateModified">2024-12-07</time>)
+        
       
     </div>
 
 
+      <span id="busuanzi_container_page_pv">
+      <span id="busuanzi_value_page_pv"></span> views
+      </span>
       
 
       
@@ -178,7 +186,7 @@
 <li>更改為：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line"></span><br><span class="line">url: https://fractohill.com  # 改為自己的地址</span><br><span class="line">permalink: :permalink        # 改為:permalink</span><br><span class="line">permalink_defaults:</span><br><span class="line">pretty_urls:</span><br><span class="line">  trailing_index: false            # Set to false to remove trailing &#x27;index.html&#x27; from permalinks</span><br><span class="line">  trailing_html: false             # Set to false to remove trailing &#x27;.html&#x27; from permalinks</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
 <li>在markdown文件的<strong>front-matter</strong>中新增<strong>permalink</strong>字段<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">permalink: /posts/modify-here-as-permalink/           #  寫文時記得修改此處</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line"><span class="section">tags: [xx, xx, xx]</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure></li>
 </ul>
-<h3 id="1-4-中文加載過慢問題"><a href="#1-4-中文加載過慢問題" class="headerlink" title="1.4 中文加載過慢問題"></a>1.4 中文加載過慢問題</h3><p>參考：<a target="_blank" rel="noopener" href="https://github.com/probberechts/hexo-theme-cactus/issues/373">issues373</a></p>
+<h3 id="1-4-中文加載過慢問題"><a href="#1-4-中文加載過慢問題" class="headerlink" title="1.4 中文加載過慢問題"></a>1.4 中文加載過慢問題</h3><p>參考：<a target="_blank" rel="noopener" href="https://github.com/probberechts/hexo-theme-cactus/issues/373">issues373</a>&amp;<a target="_blank" rel="noopener" href="https://blog-exception0x0194.pages.dev/2024/08/21/customize-hexo-cactus/">向 Hexo 的 Cactus 主题中引入中文字体</a></p>
 <h3 id="1-5-增加頁面訪問量統計功能（不蒜子）"><a href="#1-5-增加頁面訪問量統計功能（不蒜子）" class="headerlink" title="1.5 增加頁面訪問量統計功能（不蒜子）"></a>1.5 增加頁面訪問量統計功能（不蒜子）</h3><ul>
 <li>~&#x2F;theme&#x2F;_config.yml 新增以下：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">busuanzi:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure></li>
 <li>~&#x2F;theme&#x2F;layout&#x2F;_partial&#x2F;footer.ejs 顯示站點訪問量<blockquote>
@@ -244,10 +252,10 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/posts/tips/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/posts/tips/&text=持續更新：Blog相關問題及功能完善"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li> 
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/posts/tips/&title=持續更新：Blog相關問題及功能完善"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=持續更新：Blog相關問題及功能完善&body=Check out this article: http://example.com/posts/tips/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://fractohill.com/posts/tips/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://fractohill.com/posts/tips/&text=持續更新：Blog相關問題及功能完善"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li> 
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://fractohill.com/posts/tips/&title=持續更新：Blog相關問題及功能完善"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=持續更新：Blog相關問題及功能完善&body=Check out this article: https://fractohill.com/posts/tips/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -275,59 +283,49 @@
   </div>
   <div class="footer-right">
     <nav>
+      
       <ul>
-        <!--
-       --><li><a href="/">Home</a></li><!--
-     --><!--
-       --><li><a href="/about/">About</a></li><!--
-     --><!--
-       --><li><a href="/archives/">Writing</a></li><!--
-     --><!--
-       --><li><a href="/null">Projects</a></li><!--
-     -->
-      </ul>
+      
+      <!-- 不蒜子统计 -->
+      <span id="busuanzi_container_site_pv">
+      Total Visits: <span id="busuanzi_value_site_pv"></span>  
+      </span>    
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+
+      
+          <span id="timeDate">Days loaded...</span><span id="times">Hours, minutes, and seconds loaded...</span>
+          <script>
+              var now = new Date();
+              function createtime() {
+                  var create_time = new Date("11/08/2024 15:15:37");
+                  now.setTime(now.getTime() + 250);
+                  days = (now - create_time) / 1000 / 60 / 60 / 24;
+                  dnum = Math.floor(days);
+                  hours = (now - create_time) / 1000 / 60 / 60 - (24 * dnum);
+                  hnum = Math.floor(hours);
+                  if (String(hnum).length == 1) {
+                        hnum = "0" + hnum;
+                  }
+                  minutes = (now - create_time) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+                  mnum = Math.floor(minutes);
+                  if (String(mnum).length == 1) {
+                      mnum = "0" + mnum;
+                  }
+                  seconds = (now - create_time) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+                  snum = Math.round(seconds);
+                  if (String(snum).length == 1) {
+                  snum = "0" + snum;
+                  }
+                  document.getElementById("timeDate").innerHTML = " Since launch: " + dnum + "d ";
+                  document.getElementById("times").innerHTML = hnum + "h " + mnum + "m " + snum + "s " + "::)";
+              }
+              setInterval("createtime()", 250);
+          </script>
+      
+    </ul>
     </nav>
   </div>
- 
-  
-  <!-- 不蒜子统计 -->
-  <span id="busuanzi_container_site_pv">
-  Total Visits: <span id="busuanzi_value_site_pv"></span>  
-  </span>    
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  
- 
-  
-      <span id="timeDate">Days loaded...</span><span id="times">Hours, minutes, and seconds loaded...</span>
-      <script>
-          var now = new Date();
-          function createtime() {
-              var create_time = new Date("11/08/2024 15:15:37");
-              now.setTime(now.getTime() + 250);
-              days = (now - create_time) / 1000 / 60 / 60 / 24;
-              dnum = Math.floor(days);
-              hours = (now - create_time) / 1000 / 60 / 60 - (24 * dnum);
-              hnum = Math.floor(hours);
-              if (String(hnum).length == 1) {
-                  hnum = "0" + hnum;
-              }
-              minutes = (now - create_time) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
-              mnum = Math.floor(minutes);
-              if (String(mnum).length == 1) {
-                  mnum = "0" + mnum;
-              }
-              seconds = (now - create_time) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-              snum = Math.round(seconds);
-              if (String(snum).length == 1) {
-                  snum = "0" + snum;
-              }
-              document.getElementById("timeDate").innerHTML = " This site has been running for " + dnum + " days ";
-              document.getElementById("times").innerHTML = hnum + " hours " + mnum + " minutes " + snum + " seconds " + "::)";
-          }
-          setInterval("createtime()", 250);
-      </script>
-  
-
 </footer>
 
     </div>

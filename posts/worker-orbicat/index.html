@@ -9,19 +9,19 @@
     <meta name="description" content="前言：由於瀏覽器上收藏的書籤越來越多導致有點混亂，在整理的時候順便搭建了一個專屬個人的導航。   域名商選擇 價格查詢&amp;購買 將域名託管到Cloudflare 部署個人站點 關聯個人域名   域名 域名（Domain Name），又稱網域，可以說是一個IP位址的代稱，目的是為了便於記憶後者。（來自維基）  域名商選擇熱門的提供商有很多，如Namecheap，Spaceship，Godad">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用CF-Worker搭建個人導航站點小記">
-<meta property="og:url" content="http://example.com/posts/worker-orbicat/">
+<meta property="og:url" content="https://fractohill.com/posts/worker-orbicat/">
 <meta property="og:site_name" content="Fractohill｜碎山小站">
 <meta property="og:description" content="前言：由於瀏覽器上收藏的書籤越來越多導致有點混亂，在整理的時候順便搭建了一個專屬個人的導航。   域名商選擇 價格查詢&amp;購買 將域名託管到Cloudflare 部署個人站點 關聯個人域名   域名 域名（Domain Name），又稱網域，可以說是一個IP位址的代稱，目的是為了便於記憶後者。（來自維基）  域名商選擇熱門的提供商有很多，如Namecheap，Spaceship，Godad">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/posts/worker-orbicat/spaceship.png">
-<meta property="og:image" content="http://example.com/posts/worker-orbicat/%E6%9B%B4%E6%94%B9%E8%87%AA%E5%AE%9A%E7%BE%A9%E5%90%8D%E7%A8%B1%E4%BC%BA%E6%9C%8D%E5%99%A8.png">
+<meta property="og:image" content="https://fractohill.com/posts/worker-orbicat/spaceship.png">
+<meta property="og:image" content="https://fractohill.com/posts/worker-orbicat/%E6%9B%B4%E6%94%B9%E8%87%AA%E5%AE%9A%E7%BE%A9%E5%90%8D%E7%A8%B1%E4%BC%BA%E6%9C%8D%E5%99%A8.png">
 <meta property="article:published_time" content="2024-12-04T14:05:12.000Z">
 <meta property="article:modified_time" content="2024-12-04T15:36:47.855Z">
 <meta property="article:author" content="碎山">
 <meta property="article:tag" content="Domain">
 <meta property="article:tag" content="Worker">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/posts/worker-orbicat/spaceship.png">
+<meta name="twitter:image" content="https://fractohill.com/posts/worker-orbicat/spaceship.png">
     
     
       
@@ -68,7 +68,10 @@
     
 	<!-- mathjax -->
 	
-  <link rel="stylesheet" type="text/css" href="https://fonts.font.im/css?family=Noto+Sans+SC:normal,bold">
+  <link rel="stylesheet" type="text/css" href="https://fonts.font.im/css?family=Noto+Sans+SC:normal,bold,italic">
+  <link rel="stylesheet" type="text/css" href="https://fonts.font.im/css?family=Fira+Code:normal,bold">
+
+
 <meta name="generator" content="Hexo 7.3.0"></head>
 
 <body class="max-width mx-auto px3 ltr">
@@ -111,10 +114,10 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/posts/worker-orbicat/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/posts/worker-orbicat/&text=用CF-Worker搭建個人導航站點小記"><i class="fab fa-twitter " aria-hidden="true"></i></a></li> 
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/posts/worker-orbicat/&title=用CF-Worker搭建個人導航站點小記"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=用CF-Worker搭建個人導航站點小記&body=Check out this article: http://example.com/posts/worker-orbicat/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://fractohill.com/posts/worker-orbicat/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://fractohill.com/posts/worker-orbicat/&text=用CF-Worker搭建個人導航站點小記"><i class="fab fa-twitter " aria-hidden="true"></i></a></li> 
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://fractohill.com/posts/worker-orbicat/&title=用CF-Worker搭建個人導航站點小記"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=用CF-Worker搭建個人導航站點小記&body=Check out this article: https://fractohill.com/posts/worker-orbicat/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -148,10 +151,15 @@
       
         <time datetime="2024-12-04T14:05:12.000Z" class="dt-published" itemprop="datePublished">2024-12-04</time>
         
+        (Updated: <time datetime="2024-12-04T15:36:47.855Z" class="dt-updated" itemprop="dateModified">2024-12-04</time>)
+        
       
     </div>
 
 
+      <span id="busuanzi_container_page_pv">
+      <span id="busuanzi_value_page_pv"></span> views
+      </span>
       
 
       
@@ -238,10 +246,10 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/posts/worker-orbicat/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/posts/worker-orbicat/&text=用CF-Worker搭建個人導航站點小記"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li> 
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/posts/worker-orbicat/&title=用CF-Worker搭建個人導航站點小記"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=用CF-Worker搭建個人導航站點小記&body=Check out this article: http://example.com/posts/worker-orbicat/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://fractohill.com/posts/worker-orbicat/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://fractohill.com/posts/worker-orbicat/&text=用CF-Worker搭建個人導航站點小記"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li> 
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://fractohill.com/posts/worker-orbicat/&title=用CF-Worker搭建個人導航站點小記"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=用CF-Worker搭建個人導航站點小記&body=Check out this article: https://fractohill.com/posts/worker-orbicat/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -269,59 +277,49 @@
   </div>
   <div class="footer-right">
     <nav>
+      
       <ul>
-        <!--
-       --><li><a href="/">Home</a></li><!--
-     --><!--
-       --><li><a href="/about/">About</a></li><!--
-     --><!--
-       --><li><a href="/archives/">Writing</a></li><!--
-     --><!--
-       --><li><a href="/null">Projects</a></li><!--
-     -->
-      </ul>
+      
+      <!-- 不蒜子统计 -->
+      <span id="busuanzi_container_site_pv">
+      Total Visits: <span id="busuanzi_value_site_pv"></span>  
+      </span>    
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+
+      
+          <span id="timeDate">Days loaded...</span><span id="times">Hours, minutes, and seconds loaded...</span>
+          <script>
+              var now = new Date();
+              function createtime() {
+                  var create_time = new Date("11/08/2024 15:15:37");
+                  now.setTime(now.getTime() + 250);
+                  days = (now - create_time) / 1000 / 60 / 60 / 24;
+                  dnum = Math.floor(days);
+                  hours = (now - create_time) / 1000 / 60 / 60 - (24 * dnum);
+                  hnum = Math.floor(hours);
+                  if (String(hnum).length == 1) {
+                        hnum = "0" + hnum;
+                  }
+                  minutes = (now - create_time) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+                  mnum = Math.floor(minutes);
+                  if (String(mnum).length == 1) {
+                      mnum = "0" + mnum;
+                  }
+                  seconds = (now - create_time) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+                  snum = Math.round(seconds);
+                  if (String(snum).length == 1) {
+                  snum = "0" + snum;
+                  }
+                  document.getElementById("timeDate").innerHTML = " Since launch: " + dnum + "d ";
+                  document.getElementById("times").innerHTML = hnum + "h " + mnum + "m " + snum + "s " + "::)";
+              }
+              setInterval("createtime()", 250);
+          </script>
+      
+    </ul>
     </nav>
   </div>
- 
-  
-  <!-- 不蒜子统计 -->
-  <span id="busuanzi_container_site_pv">
-  Total Visits: <span id="busuanzi_value_site_pv"></span>  
-  </span>    
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  
- 
-  
-      <span id="timeDate">Days loaded...</span><span id="times">Hours, minutes, and seconds loaded...</span>
-      <script>
-          var now = new Date();
-          function createtime() {
-              var create_time = new Date("11/08/2024 15:15:37");
-              now.setTime(now.getTime() + 250);
-              days = (now - create_time) / 1000 / 60 / 60 / 24;
-              dnum = Math.floor(days);
-              hours = (now - create_time) / 1000 / 60 / 60 - (24 * dnum);
-              hnum = Math.floor(hours);
-              if (String(hnum).length == 1) {
-                  hnum = "0" + hnum;
-              }
-              minutes = (now - create_time) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
-              mnum = Math.floor(minutes);
-              if (String(mnum).length == 1) {
-                  mnum = "0" + mnum;
-              }
-              seconds = (now - create_time) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-              snum = Math.round(seconds);
-              if (String(snum).length == 1) {
-                  snum = "0" + snum;
-              }
-              document.getElementById("timeDate").innerHTML = " This site has been running for " + dnum + " days ";
-              document.getElementById("times").innerHTML = hnum + " hours " + mnum + " minutes " + snum + " seconds " + "::)";
-          }
-          setInterval("createtime()", 250);
-      </script>
-  
-
 </footer>
 
     </div>
