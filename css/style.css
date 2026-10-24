@@ -1658,4 +1658,16 @@ code {
 }
 #header-post #actions {
   direction: ltr !important;
+/* 限制 moments 裡所有圖片 */
+}
+.moments-content img,
+.moment-item img {
+  max-width: 100%;
+  max-height: 10px; /* 你想多高就改這裡，300px 400px 都行 */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 10px 0;
+  border-radius: 8px;
 }
