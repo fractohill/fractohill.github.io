@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://blog.fractohill.com/posts/worker-orbicat/spaceship.png">
 <meta property="og:image" content="https://blog.fractohill.com/posts/worker-orbicat/%E6%9B%B4%E6%94%B9%E8%87%AA%E5%AE%9A%E7%BE%A9%E5%90%8D%E7%A8%B1%E4%BC%BA%E6%9C%8D%E5%99%A8.png">
 <meta property="article:published_time" content="2024-12-04T14:05:12.000Z">
-<meta property="article:modified_time" content="2024-12-04T15:36:47.855Z">
+<meta property="article:modified_time" content="2024-12-04T15:36:47.000Z">
 <meta property="article:author" content="則山">
 <meta property="article:tag" content="Domain">
 <meta property="article:tag" content="Worker">
@@ -61,6 +61,11 @@
     
 <link rel="stylesheet" href="/css/style.css">
 
+    <link
+  rel="stylesheet"
+  href="/css/dark-theme.css"
+  media="(prefers-color-scheme: dark)"
+>
     <!-- persian styles -->
     
     <!-- rss -->
@@ -88,11 +93,9 @@
      --><!--
        --><li><a href="/about/">About</a></li><!--
      --><!--
-       --><li><a href="/archives/">Articles</a></li><!--
+       --><li><a href="/archives/">Writing</a></li><!--
      --><!--
        --><li><a href="/moments">Moments</a></li><!--
-     --><!--
-       --><li><a href="/null">Projects</a></li><!--
      -->
       </ul>
     </span>
@@ -153,7 +156,7 @@
       
         <time datetime="2024-12-04T14:05:12.000Z" class="dt-published" itemprop="datePublished">2024-12-04</time>
         
-        (Updated: <time datetime="2024-12-04T15:36:47.855Z" class="dt-updated" itemprop="dateModified">2024-12-04</time>)
+        (Updated: <time datetime="2024-12-04T15:36:47.000Z" class="dt-updated" itemprop="dateModified">2024-12-04</time>)
         
       
     </div>
@@ -232,11 +235,9 @@
         
           <li><a href="/about/">About</a></li>
         
-          <li><a href="/archives/">Articles</a></li>
+          <li><a href="/archives/">Writing</a></li>
         
           <li><a href="/moments">Moments</a></li>
-        
-          <li><a href="/null">Projects</a></li>
         
       </ul>
     </div>
@@ -281,19 +282,19 @@
   </div>
   <div class="footer-right">
     <nav>
-      
-      <ul>
-      
-      <!-- 不蒜子统计 -->
-      <span id="busuanzi_container_site_pv">
-      Total Visits: <span id="busuanzi_value_site_pv"></span>  
-      </span>    
-      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-      
+      <ul style="list-style:none;">
+        
+          <li style="margin-right:14px; border:none !important;">
+            <span id="busuanzi_container_site_pv" style="display:none">
+              Total Visits: <span id="busuanzi_value_site_pv"></span>
+            </span>
+          </li>
+        
 
-      
-          <span id="timeDate">Days loaded...</span><span id="times">Hours, minutes, and seconds loaded...</span>
-          <script>
+        
+          <li style="margin-left:14px; padding-left:16px; border-left:1px dotted #c9cacc !important;">
+            <span id="timeDate"></span><span id="times"></span>
+            <script>
               var now = new Date();
               function createtime() {
                   var create_time = new Date("11/08/2024 15:15:37");
@@ -302,29 +303,34 @@
                   dnum = Math.floor(days);
                   hours = (now - create_time) / 1000 / 60 / 60 - (24 * dnum);
                   hnum = Math.floor(hours);
-                  if (String(hnum).length == 1) {
-                        hnum = "0" + hnum;
-                  }
+                  if (String(hnum).length == 1) { hnum = "0" + hnum; }
                   minutes = (now - create_time) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
                   mnum = Math.floor(minutes);
-                  if (String(mnum).length == 1) {
-                      mnum = "0" + mnum;
-                  }
+                  if (String(mnum).length == 1) { mnum = "0" + mnum; }
                   seconds = (now - create_time) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
                   snum = Math.round(seconds);
-                  if (String(snum).length == 1) {
-                  snum = "0" + snum;
-                  }
+                  if (String(snum).length == 1) { snum = "0" + snum; }
                   document.getElementById("timeDate").innerHTML = " Since launch: " + dnum + "d ";
                   document.getElementById("times").innerHTML = hnum + "h " + mnum + "m " + snum + "s " + "::)";
               }
               setInterval("createtime()", 250);
-          </script>
-      
-    </ul>
+            </script>
+          </li>
+        
+      </ul>
     </nav>
   </div>
 </footer>
+
+
+<script async src="https://cn.vercount.one/js"></script>
+<script>
+  // vercount 兼容不蒜子 id，會自動把 -- 替換成數字
+  setTimeout(function(){
+    var c = document.getElementById('busuanzi_container_site_pv');
+    if(c) c.style.display = 'inline';
+  }, 500);
+</script>
 
     </div>
     <!-- styles -->

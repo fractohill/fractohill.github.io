@@ -14,7 +14,7 @@
 <meta property="og:description" content="1. Hexo相關 Hexo&#x2F;目前使用仙人掌主題cactus🌵+自配色orange-soda🍊  1.1 使用markdown嵌入本地圖片為了方便圖片管理，新建一篇文章時，同時新建與文章同名文件夾的方式，存放該文相關圖片。  打開_config.yml文件，找到post_asset_folder: false ，將false 設為true 打開Terminal，輸入npm insta">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-12-04T06:06:49.000Z">
-<meta property="article:modified_time" content="2026-10-24T04:15:55.273Z">
+<meta property="article:modified_time" content="2026-10-24T04:15:55.000Z">
 <meta property="article:author" content="則山">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Blogger">
@@ -58,6 +58,11 @@
     
 <link rel="stylesheet" href="/css/style.css">
 
+    <link
+  rel="stylesheet"
+  href="/css/dark-theme.css"
+  media="(prefers-color-scheme: dark)"
+>
     <!-- persian styles -->
     
     <!-- rss -->
@@ -85,11 +90,9 @@
      --><!--
        --><li><a href="/about/">About</a></li><!--
      --><!--
-       --><li><a href="/archives/">Articles</a></li><!--
+       --><li><a href="/archives/">Writing</a></li><!--
      --><!--
        --><li><a href="/moments">Moments</a></li><!--
-     --><!--
-       --><li><a href="/null">Projects</a></li><!--
      -->
       </ul>
     </span>
@@ -150,7 +153,7 @@
       
         <time datetime="2024-12-04T06:06:49.000Z" class="dt-published" itemprop="datePublished">2024-12-04</time>
         
-        (Updated: <time datetime="2026-10-24T04:15:55.273Z" class="dt-updated" itemprop="dateModified">2026-10-24</time>)
+        (Updated: <time datetime="2026-10-24T04:15:55.000Z" class="dt-updated" itemprop="dateModified">2026-10-24</time>)
         
       
     </div>
@@ -238,11 +241,9 @@
         
           <li><a href="/about/">About</a></li>
         
-          <li><a href="/archives/">Articles</a></li>
+          <li><a href="/archives/">Writing</a></li>
         
           <li><a href="/moments">Moments</a></li>
-        
-          <li><a href="/null">Projects</a></li>
         
       </ul>
     </div>
@@ -287,19 +288,19 @@
   </div>
   <div class="footer-right">
     <nav>
-      
-      <ul>
-      
-      <!-- 不蒜子统计 -->
-      <span id="busuanzi_container_site_pv">
-      Total Visits: <span id="busuanzi_value_site_pv"></span>  
-      </span>    
-      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-      
+      <ul style="list-style:none;">
+        
+          <li style="margin-right:14px; border:none !important;">
+            <span id="busuanzi_container_site_pv" style="display:none">
+              Total Visits: <span id="busuanzi_value_site_pv"></span>
+            </span>
+          </li>
+        
 
-      
-          <span id="timeDate">Days loaded...</span><span id="times">Hours, minutes, and seconds loaded...</span>
-          <script>
+        
+          <li style="margin-left:14px; padding-left:16px; border-left:1px dotted #c9cacc !important;">
+            <span id="timeDate"></span><span id="times"></span>
+            <script>
               var now = new Date();
               function createtime() {
                   var create_time = new Date("11/08/2024 15:15:37");
@@ -308,29 +309,34 @@
                   dnum = Math.floor(days);
                   hours = (now - create_time) / 1000 / 60 / 60 - (24 * dnum);
                   hnum = Math.floor(hours);
-                  if (String(hnum).length == 1) {
-                        hnum = "0" + hnum;
-                  }
+                  if (String(hnum).length == 1) { hnum = "0" + hnum; }
                   minutes = (now - create_time) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
                   mnum = Math.floor(minutes);
-                  if (String(mnum).length == 1) {
-                      mnum = "0" + mnum;
-                  }
+                  if (String(mnum).length == 1) { mnum = "0" + mnum; }
                   seconds = (now - create_time) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
                   snum = Math.round(seconds);
-                  if (String(snum).length == 1) {
-                  snum = "0" + snum;
-                  }
+                  if (String(snum).length == 1) { snum = "0" + snum; }
                   document.getElementById("timeDate").innerHTML = " Since launch: " + dnum + "d ";
                   document.getElementById("times").innerHTML = hnum + "h " + mnum + "m " + snum + "s " + "::)";
               }
               setInterval("createtime()", 250);
-          </script>
-      
-    </ul>
+            </script>
+          </li>
+        
+      </ul>
     </nav>
   </div>
 </footer>
+
+
+<script async src="https://cn.vercount.one/js"></script>
+<script>
+  // vercount 兼容不蒜子 id，會自動把 -- 替換成數字
+  setTimeout(function(){
+    var c = document.getElementById('busuanzi_container_site_pv');
+    if(c) c.style.display = 'inline';
+  }, 500);
+</script>
 
     </div>
     <!-- styles -->
